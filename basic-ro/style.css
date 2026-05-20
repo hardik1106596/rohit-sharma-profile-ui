@@ -1,0 +1,208 @@
+/* Universal Selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+
+    background: #0b1d36;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    padding: 20px;
+}
+
+/* Main Container */
+
+.container{
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: #102542;
+
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+/* Hero Section */
+
+.hero{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+/* Profile Image */
+
+.profile-img{
+
+    width: 200px;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+}
+
+/* Heading */
+
+h1{
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+/* Profession */
+
+.job{
+
+    color: gold;
+
+    margin-bottom: 15px;
+}
+
+/* Bio */
+
+.bio{
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.buttons{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+/* Button */
+
+button{
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+/* Follow Button */
+
+.follow-btn{
+
+    background: royalblue;
+
+    color: white;
+}
+
+/* Message Button */
+
+.message-btn{
+
+    background: gold;
+}
+
+/* Info Section */
+
+.info-section{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+/* Info Card */
+
+.info-card{
+
+    flex: 1;
+
+    background: #183153;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+/* Records */
+
+.records{
+
+    margin-bottom: 30px;
+}
+
+/* Records List */
+
+.records ul{
+
+    margin-top: 15px;
+
+    padding-left: 20px;
+}
+
+/* Gallery */
+
+.gallery{
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+/* Gallery Images */
+
+.gallery img{
+
+    width: 33%;
+
+    border-radius: 10px;
+}
+
+/* Social Links */
+
+.social-links{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+/* Social Links */
+
+.social-links a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
