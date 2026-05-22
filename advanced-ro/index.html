@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rohit Sharma</title>
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+
+    <section class="hero">
+
+      <!-- left -->
+      <img src="images-of-advanced/1.png" class="hero-left">
+
+      <!--right-->
+      <img src="images-of-advanced/2.png" class="hero-right">
+
+      <!--center-->
+      <div class="hero-content">
+
+        <h3>THE HITMAN</h3>
+
+        <h1>ROHIT <span>SHARMA</span></h1>
+
+        <p class="subtitle">INDIAN CRICKETER</p>
+
+        <p class="quote">
+          “Win, lose, whatever happens, find a way to smile”
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+          <button class="follow">
+            <i class="fa-solid fa-user"></i>
+            FOLLOW
+          </button>
+
+          <button class="message">
+            <i class="fa-solid fa-comment"></i>
+            MESSAGE
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INFO SECTION -->
+
+    <section class="info-section">
+
+      <div class="info-card">
+        <i class="fa-solid fa-user"></i>
+
+        <h3>ROLE</h3>
+
+        <p>Top Order<br>Batsman</p>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-baseball-bat-ball"></i>
+
+        <h3>BATTING STYLE</h3>
+
+        <p>Right Handed<br>Batsman</p>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <h3>DATE OF BIRTH</h3>
+
+        <p>30 April 1987</p>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>BIRTHPLACE</h3>
+
+        <p>Nagpur,<br>Maharashtra, India</p>
+      </div>
+
+      <div class="info-card">
+        <img src="images-of-advanced/mi.png" class="mi-logo">
+
+        <h3>IPL TEAM</h3>
+
+        <p>Mumbai<br>Indians</p>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-shirt"></i>
+
+        <h3>JERSEY NO.</h3>
+
+        <span class="jersey">45</span>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT + STATS SECTION -->
+
+    <section class="stats-wrapper">
+
+      <!-- ABOUT SECTION -->
+
+      <div class="about-box">
+
+        <h2>ABOUT ROHIT SHARMA</h2>
+
+        <p>
+          Rohit Sharma, fondly known as "The Hitman",
+          is one of the most successful opening batsmen
+          in the history of cricket. Known for his elegant
+          stroke play and ability to score big, he has
+          broken numerous records and led India to many
+          historic victories.
+        </p>
+
+        <div class="debut-boxes">
+
+          <div class="debut-card">
+            <h3>INTERNATIONAL DEBUT</h3>
+
+            <span>23 JUNE 2007</span>
+
+            <p>(ODI)</p>
+          </div>
+
+          <div class="debut-card">
+            <h3>TEST DEBUT</h3>
+
+            <span>6 NOVEMBER 2013</span>
+
+            <p>VS WEST INDIES</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- STATS SECTION -->
+
+      <div class="stats-box">
+
+        <div class="stats-top">
+
+          <h2>CAREER STATISTICS</h2>
+
+          <!-- BUTTONS -->
+
+          <div class="format-buttons">
+
+            <button class="format-btn active" onclick="changeStats(this, 'odi')">
+              ODI
+            </button>
+
+            <button class="format-btn" onclick="changeStats(this, 'test')">
+              TEST
+            </button>
+
+            <button class="format-btn" onclick="changeStats(this, 't20')">
+              T20I
+            </button>
+
+            <button class="format-btn" onclick="changeStats(this, 'ipl')">
+              IPL
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- STATS GRID -->
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <h3>MATCHES</h3>
+            <span id="matches">273</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>RUNS</h3>
+            <span id="runs">11168</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>AVERAGE</h3>
+            <span id="average">48.76</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>100s</h3>
+            <span id="hundreds">32</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>200s</h3>
+            <span id="doubleHundreds">3</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>HIGHEST SCORE</h3>
+
+            <span class="highlight" id="highest">
+              264
+            </span>
+          </div>
+
+        </div>
+
+        <!-- RECORDS -->
+
+        <div class="records">
+
+          <p id="record1">
+            ✓ Highest Individual Score in ODI: 264
+          </p>
+
+          <p id="record2">
+            ✓ Most Double Centuries in ODI: 3
+          </p>
+
+          <p id="record3">
+            ✓ Most Centuries as Opener in ODI
+          </p>
+
+          <p id="record4">
+            ✓ Score highest sixes in all formats of cricket
+          </p>
+
+           <p id="record5">
+            ✓ Most centuries in a single Cricket World Cup:5 centuries in 2019 WC.
+          </p>
+
+
+          <p id="record6">
+            ✓ Former ICC ODI Player of the Year
+          </p>
+
+          <p id="record7">
+            ✓ Multiple 150+ ODI scores — among the highest in history.
+          </p>
+
+          <!-- ROHIT IMAGE -->
+
+          <img src="images-of-advanced/8.webp"
+                class="stats-rohit">
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

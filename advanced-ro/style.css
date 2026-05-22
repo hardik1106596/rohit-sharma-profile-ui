@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #020b1f;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* ── HERO BANNER ── */
+.hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+
+    border: 2px solid #18355c;
+    border-radius: 20px;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.45)
+    ),
+    url("images-of-advanced/stad.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+/* ── LEFT PLAYER IMAGE ── */
+.hero-left {
+    position: absolute;
+    left: 0px;
+    bottom: -120px;
+    width: 380px;
+    z-index: 2;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.8));
+}
+
+/* ── RIGHT PLAYER IMAGE ── */
+.hero-right {
+    position: absolute;
+    right: -150px;
+    bottom: 0;
+    width: 700px;
+    z-index: 1;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.7));
+}
+
+/* ── CENTRE CONTENT ── */
+.hero-content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+/* Crown icon above THE HITMAN */
+.hero-content::before {
+    content: '♛';
+    display: block;
+    font-size: 20px;
+    color: #d4a437;
+    margin-bottom: 4px;
+    filter: drop-shadow(0 0 8px #d4a437);
+}
+
+/* THE HITMAN with lines */
+.hero-content h3 {
+    color: #d4a437;
+    font-size: 13px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.hero-content h3::before,
+.hero-content h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #d4a437;
+}
+
+/* ROHIT SHARMA big text */
+.hero-content h1 {
+    font-size: 110px;
+    line-height: 0.88;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 2px 30px rgba(255,255,255,0.1);
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #d4a437;
+    text-shadow: 0 0 30px rgba(212, 164, 55, 0.5);
+}
+
+/* INDIAN CRICKETER with lines */
+.subtitle {
+    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: #cccccc;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.subtitle::before,
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #aaaaaa;
+}
+
+/* Quote */
+.quote {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #d0d8e8;
+    max-width: 320px;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 20px;
+}
+
+.quote::before {
+    content: '\201C\201C';
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    font-size: 28px;
+    color: #d4a437;
+    font-style: normal;
+    line-height: 1;
+}
+
+.quote::after {
+    content: '\201D\201D';
+    position: absolute;
+    right: -4px;
+    bottom: -10px;
+    font-size: 28px;
+    color: #d4a437;
+    font-style: normal;
+    line-height: 1;
+}
+
+/* ── BUTTONS ── */
+.buttons {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.follow {
+    background: #1877ff;
+    color: white;
+    box-shadow: 0 4px 18px rgba(24, 119, 255, 0.5);
+}
+
+.message {
+    background: linear-gradient(135deg, #e8bc50, #c9920d);
+    color: white;
+    box-shadow: 0 4px 18px rgba(212, 164, 55, 0.5);
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+}
+
+
+/* INFO SECTION */
+
+.info-section{
+    position: relative;
+
+    margin-top: 8px;
+
+    display: grid;
+
+    grid-template-columns: repeat(6,1fr);
+
+    border: 2px solid #18355c;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background: #03142d;
+}
+
+/* CARD */
+
+.info-card{
+    padding: 14px 8px;
+
+    text-align: center;
+
+    border-right: 1px solid #18355c;
+
+    transition: 0.3s;
+
+    min-height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.info-card:last-child{
+    border-right: none;
+}
+
+/* HOVER */
+
+.info-card:hover{
+    background: #072047;
+}
+
+/* ICONS */
+
+.info-card i{
+    font-size: 18px;
+
+    color: #d4a437;
+
+    margin-bottom: 10px;
+}
+
+/* HEADING */
+
+.info-card h3{
+    font-size: 11px;
+
+    color: #35a2ff;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 1px;
+}
+
+/* TEXT */
+
+.info-card p{
+    font-size: 11px;
+
+    color: white;
+
+    line-height: 1.4;
+}
+
+/* JERSEY NUMBER */
+
+.jersey{
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #d4a437;
+
+    margin-top: 5px;
+}
+
+/* MI LOGO */
+
+.mi-logo{
+    width: 42px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ABOUT + STATS SECTION
+========================= */
+.stats-wrapper{
+    margin-top: 12px;
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 12px;
+
+    align-items: start;
+}
+
+.stats-box{
+    background: #03142d;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 16px;
+
+    overflow: hidden;
+}
+
+/* COMMON BOX */
+
+.about-box,
+.stats-box{
+    background: #03142d;
+
+    border: 2px solid #16385e;
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    overflow: hidden;
+
+    height:435px;
+}
+
+/* HEADINGS */
+
+.about-box h2,
+.stats-box h2{
+    color: #2f9cff;
+
+    font-size: 18px;
+
+    margin-bottom: 16px;
+
+    letter-spacing: 1px;
+}
+
+/* ABOUT TEXT */
+
+.about-box p{
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+/* DEBUT BOXES */
+
+.debut-boxes{
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.debut-card{
+    flex: 1;
+
+    border: 1px solid #18497c;
+
+    border-radius: 14px;
+
+    padding: 14px 10px;
+
+    text-align: center;
+}
+
+.debut-card h3{
+    color: #35a2ff;
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+.debut-card span{
+    color: white;
+
+    font-size: 18px;
+
+    display: block;
+
+    margin-bottom: 6px;
+}
+
+.debut-card p{
+    font-size: 13px;
+}
+
+/* =========================
+   STATS TOP
+========================= */
+
+.stats-top{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+
+/* BUTTONS */
+
+.format-buttons{
+    display: flex;
+
+    gap: 8px;
+}
+
+.format-btn{
+    border: none;
+
+    background: #071f42;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.format-btn.active{
+    background: #1877ff;
+}
+
+/* =========================
+   STATS GRID
+========================= */
+
+.stats-grid{
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+/* SINGLE CARD */
+.stat-card{
+    border: 1px solid #18497c;
+
+    border-radius: 12px;
+
+    padding: 14px 6px;
+
+    text-align: center;
+
+    min-width: 0;
+}
+
+.stat-card h3{
+    color: white;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+
+    font-weight: 400;
+}
+
+.stat-card span{
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+.highlight{
+    color: #d4a437 !important;
+}
+
+/* =========================
+   RECORDS
+========================= */
+
+.records{
+    margin-top: 18px;
+}
+
+.records p{
+    color: white;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* STATS BOX */
+
+.stats-box{
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        rgba(3,20,45,0.82),
+        rgba(3,20,45,0.82)
+    ),
+    url("images/rohit-crowd.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 18px;
+}
+
+/* ROHIT IMAGE */
+
+.stats-rohit{
+    position: absolute;
+
+    right: 750px;
+
+    left: -35px;
+
+    bottom: -35px;
+
+    width:900px;
+
+    opacity: 0.35;
+
+    height: auto;
+
+
+    mix-blend-mode: screen;
+
+    pointer-events: none;
+}
+.stats-box::after{
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    width: 280px;
+
+    height: 220px;
+
+    background:
+    linear-gradient(
+        to left,
+        rgba(3,20,45,1),
+        rgba(3,20,45,0)
+    );
+
+    z-index: 2;
+}
+
+.stats-grid,
+.records,
+.stats-top{
+    position: relative;
+
+    z-index: 5;
+}
