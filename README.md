@@ -1,3 +1,8 @@
+link of both::::
+
+basic:
+advanced:
+
 # 🏏 Rohit Sharma Profile UI
 
 A complete frontend learning project inspired by a modern Rohit Sharma player profile design.
