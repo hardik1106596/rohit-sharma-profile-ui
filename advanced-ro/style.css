@@ -600,6 +600,8 @@ button:hover {
 
     pointer-events: none;
 }
+
+
 .stats-box::after{
     content: "";
 
@@ -630,3 +632,525 @@ button:hover {
 
     z-index: 5;
 }
+
+
+/* =========================
+   RECORDS WRAPPER
+========================= */
+
+.records-wrapper{
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+/* COMMON BOX */
+
+.achievements-box,
+.records-box{
+    background: #03142d;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    overflow: hidden;
+}
+
+/* HEADINGS */
+
+.achievements-box h2,
+.records-box h2{
+    color: #2f9cff;
+
+    font-size: 20px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+/* ICON COLOR */
+
+.achievements-box h2 i,
+.records-box h2 i{
+    color: #d4a437;
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievements-box ul{
+    list-style: none;
+
+    padding: 0;
+}
+
+.achievements-box li{
+    color: white;
+
+    font-size: 15px;
+
+    margin-bottom: 14px;
+
+    position: relative;
+
+    padding-left: 22px;
+
+    line-height: 1.5;
+}
+
+/* STAR */
+
+.achievements-box li::before{
+    content: "★";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #d4a437;
+}
+
+/* IPL BOX */
+
+.ipl-captain{
+    margin-top: 18px;
+
+    border: 1px solid #18497c;
+
+    border-radius: 14px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.ipl-captain img{
+    width: 60px;
+}
+
+.ipl-captain h3{
+    color: white;
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+.ipl-captain p{
+    color: #d0d0d0;
+
+    font-size: 13px;
+}
+
+/* =========================
+   RECORDS GRID
+========================= */
+
+.records-grid{
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 10px;
+}
+
+/* CARD */
+
+.record-card{
+    border: 1px solid #18497c;
+
+    border-radius: 14px;
+
+    padding: 18px 10px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.02);
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.record-card:hover{
+    transform: translateY(-5px);
+
+    background: rgba(215, 61, 61, 0.05);
+}
+
+/* ICON */
+
+.record-card i{
+    font-size: 38px;
+
+    color: white;
+
+    margin-bottom: 14px;
+}
+
+/* TEXT */
+
+.record-card p{
+    color: white;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    min-height: 60px;
+}
+
+/* VALUE */
+
+.record-card span{
+    color: #d4a437;
+
+    font-size: 42px;
+
+    font-weight: bold;
+}
+
+
+
+.stats-rohit1{
+    position: absolute;
+
+    right: 750px;
+
+    left: -20px;
+
+    bottom: -35px;
+
+    width:900px;
+
+    opacity: 0.35;
+
+    height: auto;
+
+
+    mix-blend-mode: screen;
+
+    pointer-events: none;
+}
+
+.records-box{
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        rgba(3,20,45,0.82),
+        rgba(3,20,45,0.82)
+    ),
+    url("images/rohit-crowd.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 18px;
+}
+
+
+
+.quote-section{
+    margin-top: 12px;
+
+    background: #03142d;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* QUOTE ICON */
+
+.quote-section i{
+    font-size: 42px;
+
+    color: #d4a437;
+
+    margin-bottom: 18px;
+}
+
+/* MAIN QUOTE */
+
+.quote-section h2{
+    font-size: 34px;
+
+    line-height: 1.5;
+
+    color: white;
+
+    font-weight: 600;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+/* NAME */
+
+.quote-section p{
+    font-size: 34px;
+
+    line-height: 1.5;
+
+    color: white;
+
+    font-weight: 600;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+/* LIGHT EFFECT */
+
+.quote-section::before{
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background:
+    radial-gradient(
+        rgba(232, 218, 184, 0.15),
+        transparent 70%
+    );
+
+    top: -120px;
+    left: -120px;
+}
+
+.record-quote{
+    margin-top: -20px;
+
+    margin-bottom: -80px;
+
+    margin-left: 400px;
+
+    margin-right: 30px;
+
+    padding: 30px 70px 10px 70px;
+
+    text-align: left;
+
+    position: relative;
+
+    left: 110px;
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-section{
+
+    margin-top: 12px;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #03142d;
+}
+
+/* GALLERY */
+
+.gallery{
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+}
+
+/* IMAGES */
+
+.gallery img{
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-right: 1px solid #18355c;
+
+    transition: 0.4s;
+
+    cursor: pointer;
+}
+
+/* REMOVE LAST BORDER */
+
+.gallery img:last-child{
+
+    border-right: none;
+}
+
+/* HOVER */
+
+.gallery img:hover{
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   SOCIAL SECTION
+========================= */
+
+.social-section{
+
+    margin-top: 12px;
+
+    background: #03142d;
+
+    border: 2px solid #18355c;
+
+    border-radius: 20px;
+
+    padding: 18px;
+}
+
+/* HEADING */
+
+.social-section h2{
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 2px;
+
+    font-size: 34px;
+}
+
+/* SOCIAL LINKS */
+
+.social-links{
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 12px;
+}
+
+/* EACH LINK */
+
+.social-links a{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    background: #081b33;
+
+    border: 1px solid #18355c;
+
+    border-radius: 14px;
+
+    padding: 18px 10px;
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.social-links a:hover{
+
+    transform: translateY(-5px);
+
+    background: #0d2747;
+}
+
+/* ICONS */
+
+.social-links i{
+
+    font-size: 34px;
+}
+
+/* INSTAGRAM */
+
+.fa-instagram{
+
+    color: #ff4fa3;
+}
+
+/* TWITTER */
+
+.fa-twitter{
+
+    color: #1da1f2;
+}
+
+/* FACEBOOK */
+
+.fa-facebook-f{
+
+    color: #1877f2;
+}
+
+/* YOUTUBE */
+
+.fa-youtube{
+
+    color: red;
+}
+
+/* X LOGO */
+
+.x-logo{
+
+    font-size: 34px;
+
+    font-weight: bold;
+}
+
+

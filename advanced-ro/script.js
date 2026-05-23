@@ -113,3 +113,76 @@ function changeStats(button, format) {
 
   button.classList.add("active");
 }
+
+/* =========================
+   FOLLOW BUTTON
+========================= */
+
+const followBtn =
+document.querySelector(".follow-btn");
+
+/* TEXT INSIDE BUTTON */
+
+const followText =
+followBtn.querySelector("span");
+
+/* FOLLOW STATE */
+
+let isFollowing = false;
+
+/* CLICK EVENT */
+
+followBtn.addEventListener("click", () => {
+
+    /* TOGGLE STATE */
+
+    isFollowing = !isFollowing;
+
+    /* IF FOLLOWING */
+
+    if(isFollowing){
+
+        followText.innerText =
+        "Following";
+
+        followBtn.style.background =
+        "#1db954";
+
+        followBtn.style.boxShadow =
+        "0 0 20px rgba(29,185,84,0.6)";
+    }
+
+    /* IF NOT FOLLOWING */
+
+    else{
+
+        followText.innerText =
+        "Follow";
+
+        followBtn.style.background =
+        "#1877ff";
+
+        followBtn.style.boxShadow =
+        "0 4px 18px rgba(24,119,255,0.5)";
+    }
+
+});
+
+/* =========================
+   MESSAGE BUTTON
+========================= */
+
+
+const messageBtn =
+document.querySelector(".message-btn");
+
+/* OPEN ROHIT INSTAGRAM */
+
+messageBtn.addEventListener("click", () => {
+
+    window.open(
+        "https://www.instagram.com/rohitsharma45/",
+        "_blank"
+    );
+
+});
