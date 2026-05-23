@@ -1,7 +1,4 @@
-link of both::::
 
-basic:
-advanced:
 
 # 🏏 Rohit Sharma Profile UI
 
