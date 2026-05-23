@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Rohit Sharma UI Projects
+    </title>
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(2,11,31,0.55),
+        rgba(2,11,31,0.70)
+    ),
+    url("advanced/images-of-advanced/stad.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+        /* MAIN CONTAINER */
+
+        .container{
+
+            width:90%;
+
+            max-width:1200px;
+
+            border:2px solid #18355c;
+
+            border-radius:30px;
+
+            overflow:hidden;
+
+            position:relative;
+
+            background:
+            linear-gradient(
+                to right,
+                rgba(3,20,45,0.92),
+                rgba(3,20,45,0.78)
+            );
+
+            backdrop-filter:blur(10px);
+
+            padding:60px;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:space-between;
+        }
+
+        /* LEFT CONTENT */
+
+        .content{
+
+            position:relative;
+
+            z-index:5;
+
+            max-width:520px;
+        }
+
+        /* SMALL TITLE */
+
+        .content h3{
+
+            color:#d4a437;
+
+            letter-spacing:6px;
+
+            margin-bottom:12px;
+
+            font-size:14px;
+        }
+
+        .player-img{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:0;
+
+    width:550px;
+
+    z-index:2;
+
+    opacity:0.95;
+
+    filter:
+    drop-shadow(
+        0 0 40px rgba(0,0,0,0.7)
+    );
+}
+
+        /* MAIN TITLE */
+
+        .content h1{
+
+            font-family:'Bebas Neue',sans-serif;
+
+            font-size:110px;
+
+            line-height:0.9;
+
+            color:white;
+
+            letter-spacing:4px;
+
+            margin-bottom:20px;
+        }
+
+        .content h1 span{
+
+            color:#d4a437;
+        }
+
+        /* DESCRIPTION */
+
+        .content p{
+
+            color:#d0d8e8;
+
+            line-height:1.8;
+
+            margin-bottom:35px;
+
+            font-size:16px;
+        }
+
+        /* BUTTONS */
+
+        .buttons{
+
+            display:flex;
+
+            gap:18px;
+        }
+
+        /* BUTTON */
+
+        .buttons a{
+
+            text-decoration:none;
+
+            padding:16px 34px;
+
+            border-radius:14px;
+
+            font-weight:600;
+
+            transition:0.3s;
+
+            display:inline-block;
+        }
+
+        /* BASIC BUTTON */
+
+        .basic-btn{
+
+            background:#1877ff;
+
+            color:white;
+
+            box-shadow:
+            0 4px 18px rgba(24,119,255,0.5);
+        }
+
+        /* ADVANCED BUTTON */
+
+        .advanced-btn{
+
+            background:
+            linear-gradient(
+                135deg,
+                #e8bc50,
+                #c9920d
+            );
+
+            color:white;
+
+            box-shadow:
+            0 4px 18px rgba(212,164,55,0.45);
+        }
+
+        /* HOVER */
+
+        .buttons a:hover{
+
+            transform:
+            translateY(-5px)
+            scale(1.03);
+        }
+
+        /* RIGHT IMAGE */
+
+
+
+        /* LIGHT EFFECT */
+
+        .container::before{
+
+            content:"";
+
+            position:absolute;
+
+            width:420px;
+
+            height:420px;
+
+            border-radius:50%;
+
+            background:
+            radial-gradient(
+                rgba(212,164,55,0.18),
+                transparent 70%
+            );
+
+            top:-120px;
+
+            left:-120px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="content">
+
+            <h3>
+                FRONTEND LEARNING PROJECT
+            </h3>
+
+            <h1>
+
+                ROHIT
+                <span>SHARMA</span>
+
+            </h1>
+
+            <p>
+
+                A complete frontend learning
+                project built using HTML,
+                CSS and JavaScript.
+
+                Explore both the beginner
+                and advanced versions of the
+                Rohit Sharma profile UI.
+
+            </p>
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <a
+                    href="basic-ro/"
+                    class="basic-btn"
+                >
+
+                    Basic Version
+
+                </a>
+
+                <a
+                    href="advanced-ro/"
+                    class="advanced-btn"
+                >
+
+                    Advanced Version
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PLAYER IMAGE -->
+
+        <img
+            src="advanced-ro/images-of-advanced/main.webp"
+            class="player-img"
+            alt="Rohit Sharma"
+        >
+
+    </div>
+
+</body>
+</html>
